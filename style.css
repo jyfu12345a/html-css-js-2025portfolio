@@ -3,6 +3,37 @@
 /* This imports the font Poppins from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
+/* css variables */
+/* Default Light Mode */
+:root {
+  --primary-color: white;
+  --primary-color-2: rgb(250, 250, 250);
+  --primary-color-3: rgb(181, 181, 181);
+  --background-color: rgb(255, 255, 255);
+  --secondary-color: rgb(black);
+  --secondary-color-2: rgb(85, 85, 85);
+  --button-background: rgb(53, 53, 53);
+  --button-text-hover: rgb(grey);
+  --button-border: rgb(53, 53, 53) 0.1rem solid;
+  --button-border-2: rgb(255, 255, 255) 0.1rem solid;
+  --container-border: rgb(163, 163, 163) 0.1rem solid;
+}
+
+/* Dark Mode */
+[theme="dark"] {
+  --primary-color: black;
+  --primary-color-2: rgb(39, 39, 39);
+  --primary-color-3: rgb(74, 74, 74);
+  --background-color: rgb(33, 33, 33);
+  --secondary-color: rgb(white);
+  --secondary-color-2: rgb(170, 170, 170);
+  --button-background: rgb(202, 202, 202);
+  --button-text-hover: rgb(lightgrey);
+  --button-border: rgb(202, 202, 202) 0.1rem solid;
+  --button-border-2: rgb(0, 0, 0) 0.1rem solid;
+  --container-border: rgb(92, 92, 92) 0.1rem solid;
+}
+
 * {
   /* The * targets the whole page */
   margin: 0; /* This removes any margin or padding in the page */
