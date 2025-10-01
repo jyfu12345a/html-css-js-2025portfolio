@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JackYongFu Luo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- This links the html sheet to the style file -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- This links the html sheet to the mediaqueries file -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href='./#desktop-nav'"
+        />
+      </div>
+      <!-- This creates a logo with our name in it -->
+      <div>
+        <ul class="nav-links">
+          <!-- unordered list -->
+          <li><a href="index.html#about">About</a></li>
+          <!-- A list that allows us to navigate to each section -->
+          <li><a href="index.html#experience">Experience</a></li>
+          <!-- If you press Shift + Alt + Arrow Key (Down) to duplicate lines -->
+          <li><a href="index.html#projects">Projects</a></li>
+          <!-- If you press Shift + Alt + A, you can comment highlighted code -->
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+          <!-- ^^^ The normal src is default on initial launch, then we want to be able to switch from light and dark, in addition to target our icon, we will use a unique identifier through its own id modeToggle. A class is also used to style it. -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href='./#desktop-nav'"
+        />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- The onlick is a function that lets us use javascript to make the hamburger menu interactive when users click -->
+          <span></span>
+          <!-- The lines of the hamburger menu -->
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- These will be the actual links that are going to be open when we open with this function -->
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <!-- The onclick is used here to close the menu whenever we click on the different links as well -->
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+          <li>
+            <!-- id can only be used once -->
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jack Luo</h1>
+        <p class="section__text__p2">UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- onclick window targets the whole window -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            src-light="./assets/linkedin.png"
+            src-dark="./assets/linkedin_invert.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/jack-yong-fu-luo/'"
+          />
+          <img
+            src="./assets/github.png"
+            src-light="./assets/github.png"
+            src-dark="./assets/github_invert.png"
+            alt="My Github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/jyfu12345a/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jack Luo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

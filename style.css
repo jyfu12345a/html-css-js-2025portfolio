@@ -1,7 +1,28 @@
 /* GENERAL */
 
 /* This imports the font Poppins from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"); */
+@font-face {
+  font-family: "glacialindifference", sans-serif;
+  src: url(./fonts/GlacialIndifference-Regular.otf) format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "glacialindifference", sans-serif; /* The san-serif is a fallback font */
+  src: url(./fonts/GlacialIndifference-Bold.otf) format("otf");
+  font-weight: bold; /* Numerical value is 700 is also valid */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "glacialindifference", sans-serif;
+  src: url(./fonts/GlacialIndifference-Italic.otf) format("otf");
+  font-weight: normal; /* Italic fonts usually have a normal weight*/
+  font-style: italic;
+  font-display: swap;
+}
 
 /* css variables */
 /* Default Light Mode */
@@ -45,8 +66,13 @@ h3 {
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   background-color: var(--background-color);
+  font-family: "glacialindifference", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 html {
@@ -110,8 +136,15 @@ nav a:hover {
   text-decoration-color: var(--secondary-color);
 }
 
+#logo_icon {
+  cursor: pointer;
+  max-width: 35%; /* Image will not exceed the width of its parent container */
+  height: auto; /* Maintains aspect ratio */
+}
+
 .logo {
   font-size: 2rem;
+  font-weight: bold;
   color: var(--secondary-color);
 }
 
