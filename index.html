@@ -89,9 +89,12 @@
         <img src="./assets/profile-pic.png" alt="Jack Luo profile picture"/>
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jack Luo</h1>
-        <p class="section__text__p2">UI/UX Designer</p>
+        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+        <!-- <h1 class="title">Jack Luo</h1>
+        <p class="section__text__p2">UX/UI Designer</p> -->
+        <p class="title section_align">Jack Luo is a Vancouver-based user experience and product designer</p>
+        <p class="section__text__p2 section_align">With a background in Interactive Arts and Technology from Simon Fraser University, I approach design as a form of purposeful communication.</p>
+        <p class="section__text__p2 section_align">Today, I strive to design interfaces that balance beauty and usability, while continuously exploring new ways to shape meaningful, forward-looking digital experiences for users.</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -124,6 +127,94 @@
         </div>
       </div>
     </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Monkeypaw Productions</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_1.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">FRIJ</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_2.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">TailorNest</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_3.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          src-light="./assets/arrow.png"
+          src-dark="./assets/arrow_invert.png"
+          alt="Arrow Icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -131,48 +222,53 @@
         <div class="section__pic-container">
           <img
             src="./assets/about-pic.jpeg"
-            alt="Profile picture"
+            alt="Umeda Sky Building"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                src-light="./assets/experience.png"
-                src-dark="./assets/experience_invert.png"
-                alt="Experience icon"
-                class="icon"
-              />
               <!-- The ./ allows us to go into the asset folder -->
-              <h3>Experience</h3>
-              <p>2+ Years <br />Fronted Development</p>
-              <!-- the br is a break to go to a new line -->
-            </div>
-            <div class="details-container">
-              <img
+              <h3>
+                Education
+                <img
                 src="./assets/education.png"
                 src-light="./assets/education.png"
                 src-dark="./assets/education_invert.png"
                 alt="Education icon"
                 class="icon"
               />
+              </h3>
+              <br>
+              <p class="aboutme_text">B.A. Bachelors Degree<br /></p>
+              <p class="aboutme_text">Major in Interactive Arts and Technology<br /></p>
+              <p class="aboutme_text">Certificate in Innovation and Entrepreneurship</p>
+            </div>
+            <div class="details-container">
               <!-- The ./ allows us to go into the asset folder -->
-              <h3>Education</h3>
-              <p>B.A. Bachelors Degree<br /></p>
-              <p>Major in Interactive Arts and Technology<br /></p>
-              <p>Certificate in Innovation and Entrepreneurship</p>
+              <h3>
+                Volunteer
+                <img
+                src="./assets/experience.png"
+                src-light="./assets/experience.png"
+                src-dark="./assets/experience_invert.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              </h3>
+              <br>
+              <p class="aboutme_text"><strong>VP of Design</strong> @ SFU Surrey Badminton (1.5 Years)</p>
+              <p class="aboutme_text"><strong>External Relations Coordinator</strong> @ SFU K.Storm (1 Year)</p>
+              <!-- the br is a break to go to a new line -->
             </div>
           </div>
           <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              magnam recusandae repellat repellendus corporis expedita dicta
-              architecto eligendi. Cum voluptate, nobis similique harum repellat
-              ipsum natus doloremque culpa, aliquam in adipisci neque atque
-              laboriosam enim ad quis et. Fugit ea veniam, nisi eius rem sit
-              fuga earum sequi sint explicabo?
+            <p class="aboutme_text">
+              Hi, I’m <strong>Jack!</strong> I was born in the Fiji Islands and later moved to Canada, where I first discovered my passion for information and web design back in high school. That spark led me to pursue Interactive Arts and Technology at Simon Fraser University, focusing on UX/UI design.
+            </p> <br><br>
+            <p class="aboutme_text">
+              <strong>Outside of design</strong>, I love making new friends and staying active through basketball, badminton, and hiking. I’m also an avid traveler, always inspired by the cultures and landscapes I encounter around the world. <strong>In my downtime</strong>, you can find me gaming on my desktop, catching up with friends and family, or trying out new food spots in the city!
             </p>
           </div>
         </div>
@@ -185,14 +281,14 @@
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
-    </section>
-    <section id="experience">
+      </section>
+      <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills & Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">UI Design</h2>
+            <h2 class="experience-sub-title">Software Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -203,7 +299,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>Figma</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -216,7 +312,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>Adobe Illustrator</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -229,7 +325,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
+                  <h3>Adobe Photoshop</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -242,8 +338,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>Slack/Discord</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -255,21 +351,73 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  src-light="./assets/checkmark.png"
-                  src-dark="./assets/checkmark_invert.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
+                  <h3>Miro</h3>
                   <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe After Effects</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ProtoPie</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Premiere Pro</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe InDesign</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
@@ -286,8 +434,9 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>User Research</h3>
+                  <h4>Interviews, surveys, usability testing</h4>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -299,7 +448,59 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>Content Strategy & UX Writing Basics</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>User Personas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Journey Mapping</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data-driven Design</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>A/B Testing</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -312,7 +513,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>Usability Heuristics Evaluation</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -325,124 +526,147 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  src-light="./assets/checkmark.png"
-                  src-dark="./assets/checkmark_invert.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Holder 1</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  src-light="./assets/checkmark.png"
-                  src-dark="./assets/checkmark_invert.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Holder 2</h3>
+                  <h3>Human-Centered Design</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        src-light="./assets/arrow.png"
-        src-dark="./assets/arrow_invert.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI Design</h2>
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='project_1.html'"
-              >
-                Explore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='project_2.html'"
-              >
-                Explore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='project_3.html'"
-              >
-                Explore
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Design</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wireframing</h3>
+                  <h4>Low-Mid Fidelity</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mockups</h3>
+                  <h4>High Fidelity</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prototyping</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Design Systems & Style Guides</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI kits & Component Libraries</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Graphics/Illustration</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Branding</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Motion/Interaction Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Accessiblity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -491,6 +715,16 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <div class="logo">
+              <img
+              id="logo_icon"
+              class="icon"
+              src="./assets/logo_light_png.png"
+              src-light="./assets/logo_light_png.png"
+              src-dark="./assets/logo_dark_png.png"
+              alt="JYFU Logo"
+              onclick="location.href='./#desktop-nav'">
+            </div>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>

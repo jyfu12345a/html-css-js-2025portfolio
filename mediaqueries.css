@@ -43,6 +43,14 @@
   .about-containers {
     margin-top: 0;
   }
+
+  .section__text {
+    margin-top: 1rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -97,5 +105,9 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  .section__text {
+    margin-top: 1rem;
   }
 }
